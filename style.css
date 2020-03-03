@@ -1,0 +1,88 @@
+body{
+  text-align: center;
+  background-color: #262626;
+}
+#inputarea{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#inputfile{
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#inputfile + label {
+  transition: all 0.5s ease;
+  font-size: 1.5em;
+  background-color: #262626;
+  color: #b3ffe6;
+  padding: 20px;
+  border-radius: 4px;
+  text-shadow:
+  0 0 6px rgba(26, 255, 178, 0.9),
+    0 0 7px rgba(26, 255, 178, 0.3), 0 0 12px rgba(0, 230, 153, 0.5);
+  box-shadow:0 0 6px rgba(26, 255, 178, 0.9),
+    0 0 7px rgba(26, 255, 178, 0.3), 0 0 12px rgba(0, 230, 153, 0.5);
+}
+
+#inputfile + label:hover {
+    background-color: black;
+}
+
+#q-container{
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 400px;
+  text-align: center;
+  display: inline-block;
+}
+
+/*https://codepen.io/alphardex/pen/rNNwmZz*/
+.neon {
+  color: #b3ffe6;
+  font-size: 3em;
+  font-family: 'Marker Felt', fantasy;
+  font-weight: bold;
+  animation: shining 0.1s alternate infinite;
+}
+
+@keyframes shining {
+  from {
+    text-shadow: 0 0 6px rgba(26, 255, 178, 0.9),
+      0 0 30px rgba(26, 255, 178, 0.3), 0 0 12px rgba(0, 230, 153, 0.5),
+      0 0 21px rgba(0, 230, 153, 0.9), 0 0 34px rgba(0, 230, 153, 0.8),
+      0 0 54px rgba(0, 230, 153, 0.9);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(26, 255, 178, 1),
+      0 0 30px rgba(26, 255, 178, 0.4), 0 0 12px rgba(0, 230, 153, 0.6),
+      0 0 22px rgba(0, 230, 153, 0.8), 0 0 38px rgba(0, 230, 153, 0.9),
+      0 0 60px rgba(0, 230, 153, 1);
+  }
+}
+
+#shuffle{
+  margin-right: 10%;
+}
+
+.simple{
+  font-size: 1.5em;
+  background-color: #262626;
+  border-color: #b3ffe6;
+  color: #b3ffe6;
+  padding: 20px;
+  border-radius: 4px;
+  text-shadow:
+  0 0 6px rgba(26, 255, 178, 0.9),
+    0 0 7px rgba(26, 255, 178, 0.3), 0 0 12px rgba(0, 230, 153, 0.5);
+  box-shadow:0 0 6px rgba(26, 255, 178, 0.9),
+    0 0 7px rgba(26, 255, 178, 0.3), 0 0 12px rgba(0, 230, 153, 0.5);
+}
+
+.simple:hover {
+    border-color: #00ffaa;
+}
